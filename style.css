@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.todo-app {
+  max-width: 560px;
+  margin: 56px auto;
+  padding: 24px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 1.8rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.todo-form button,
+.remove {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.todo-form button {
+  background: #2563eb;
+  color: #fff;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 18px 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.todo-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.remove {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.summary,
+.empty-state {
+  color: #4b5563;
+  margin: 10px 0 0;
+}
